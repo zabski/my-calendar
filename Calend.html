@@ -1,0 +1,314 @@
+<!DOCTYPE html> 
+<html> 
+<!--meta name="propeller" content="d254abea09f12908d3c188120f49153f"-->
+<head> 
+    <meta charset="utf-8" /> 
+    <title>My Calendar</title> 
+    <link rel="stylesheet" href="calendar2.css" />
+	<META NAME="DESCRIPTION" CONTENT="Check your menstrual cycle, find your fertile and infertile days, calculate your ovulation day">
+	<META NAME="KEYWORDS" CONTENT="Menstrual cycle, Fertility, Fertile days, Infertile days, Ovulation, Menstrual cycle calendar, Period calculator, Safe sexual intercourse, Natural contraception">
+	
+
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-4402674240600002",
+		enable_page_level_ads: true
+	  });
+	</script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="calendar.js"></script>
+	
+	<!--meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+	<div id="myHeader" class="header">
+	<!--?php include "sidebar.html"; ?-->
+	</div>
+</head> 
+<body onload="checkDate('')"> 
+	<!-- Sidebar --
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="fert.html" class="w3-bar-item w3-button">Fertility</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content --
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <!--div class="w3-container">
+    
+	My Calendar
+	
+  </div>
+</div-->
+
+<!--calendar-->
+	<div id="cal"> 
+    <div class="header"> 
+		<span class="left button" id="prev"> &lang; </span> 
+		<!--span class="left hook"></span--> 
+		<span class="month-year" id="label"> June 2018 </span> 
+		<!--span class="right hook"></span--> 
+		<span class="right button" id="next"> &rang; </span>
+    </div> 
+    <table id="days"> 
+		<td>Sunday</td> 
+		<td>Monday</td> 
+		<td>Tuesday</td> 
+		<td>Wednesday</td> 
+		<td>Thursday</td> 
+		<td>Friday</td> 
+		<td>Saturday</td>		
+ 
+    </table> 
+    <div id="cal-frame"> 
+		<table class="curr"> 
+			<tbody> 
+				<tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr> 
+				<tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="today">11</td><td>12</td></tr> 
+				<tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr> 
+				<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr> 
+				<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+				<tr><td>27</td><td>28</td><td>29</td><td>30</td><td class="nil"></td><td class="nil"></td><td class="nil"></td></tr> 
+			</tbody> 
+		</table>
+ 
+    </div> 
+</div>
+<div id="legend">
+		
+		<table class="legend"> 
+			<tbody> 				 
+				<tr><td class="title">&plus;</td><td class="title">Explanation</td><td class="title">Chance / Risk</td></tr>
+				<tr><td class="picked">1</td><td class="desc">First day of period</td><td class="desc">no</td></tr> 
+				<tr><td class="period">2</td><td class="desc">Period days</td><td class="desc">no</td></tr> 
+				<tr><td class="fertile">3</td><td class="desc">Fertile days</td><td class="desc">high</td></tr> 
+				<tr><td class="ovulation">4</td><td class="desc">Ovulation</td><td class="desc">high</td></tr> 
+				<tr><td >5</td><td class="desc">Infertile days </td><td class="desc">low</td></tr> 
+				<tr><td class="today">6</td><td class="desc">Today</td><td class="desc">see calendar</td></tr> 
+			</tbody> 
+		</table>
+		
+</div>
+
+<!-- my stuff -->
+<form role="form" id="input_data">
+	<p>
+		<label for="cycle">Cycle days</label><br>
+		<input type="button" id="cycle_prev" value="&minus;" onclick="buttonPress('cycle', -1);"/>
+		<input type="number" id="cycle" min="20" max="40" step="1" value="28" default="28" onchange="updateCalendar();" readonly/>
+		<input type="button" id="cycle_next" value="&plus;" onclick="buttonPress('cycle', 1);"/> 
+	<p>
+		
+		<label for="period">Period days</label><br>
+		<input type="button" id="period_prev" value="&minus;" onclick="buttonPress('period', -1);"/>
+		<input type="number" id="period" min="2" max="7" step="1" value="5" default="5" onchange="updateCalendar();" readonly/>
+		<input type="button" id="period_next" value="&plus;" onclick="buttonPress('period', 1);"/> 
+	<p class="luteal">
+		
+		<label for="luteal">Luteal days</label><br>
+		<input type="button" id="luteal_prev" value="&minus;" onclick="buttonPress('luteal', -1);"/>		
+		<input type="number" id="luteal" min="10" max="16" step="1" value="14" default="14" onchange="updateCalendar();"/>
+		<input type="button" id="luteal_next" value="&plus;" onclick="buttonPress('luteal', 1);"/> 
+	<p>
+		<label for="last">Last period start date</label><br>
+		<input type="date" id="last_cycle" name="last" onchange="updateCalendar();" /> 
+		<!--onload="this.value=checkDate(this.value)" onFocus="this.value=checkDate(this.value)" /> <!--onFocus="if (this.value=='' || this.value=='dd.mm.rrrr') {this.value=getDate()}" -->
+		<br>
+		<text id="weekday">Weekday</text>
+</form>
+<div id="instruction">
+<h1>Instruction</h1>
+<p>
+In order to check the phase of your menstrual cycle, please enter the length of your menstrual cycle, and the start date of your last menstruation period. Then look at the calendar. It will indicate your current phase of the cycle, along with the likelyhood of conception for each day of the month.
+</div>
+<!-- end lz my stuff -->
+<!--div id="p_1774275"></div><script src="//native.propellerads.com/1?z=1774275&eid=p_1774275"></script-->
+</body>
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="calendar.js"></script-->
+<script>
+
+	var cald;
+	var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"];
+	
+	//updateCalendar();
+	
+	
+		function cyclePrev(){
+		document.forms["input_data"]["cycle"].value -= 1;
+		/*
+		var lastVal = document.forms["input_data"]["cycle"].value;
+			var cycle = $("#cycle");
+			var lastText = cycle.text();
+			var val = cycle.value;
+			//var lastVal = parseInt(lastText);
+			var newVal = --lastVal;
+			$(cycle).text = --lastVal;
+			document.forms["input_data"]["cycle"].value = newVal;*/
+		}
+		
+		function buttonPress(fieldId, shift){
+			var num = parseInt(-shift);
+			var val = document.forms["input_data"][fieldId].value;
+			var min = document.forms["input_data"][fieldId].min;
+			var max = document.forms["input_data"][fieldId].max;
+			
+			if ((shift==-1 && val > min) || (shift==1 && val < max))
+				document.forms["input_data"][fieldId].value -= num;
+				
+			updateCalendar();				
+		}
+		
+		function updateCalendar(){
+			var tagtag = document.getElementById("last_cycle");											
+			var val = tagtag.value;
+			var date = new Date(val);
+			var month = date.getMonth()+1;
+			var day = date.getDate();	
+			var dayOfWeek = date.getDay();
+			var year = date.getFullYear();
+			var dateTag = $("last_cycle");
+			var newDate = $("last_cycle").val;
+			var newDate2 = $("last_cycle").val();
+			var newDate3 = $("last_cycle").value;
+			dateTag = document.getElementById("weekday");
+			dayOfWeek = weekdays[dayOfWeek];
+			dateTag.innerHTML = dayOfWeek;
+			if (day<10) { day = "0"+day;}
+			if (month<10) { month = "0"+month;}
+			var formatDate = year+"-"+month+"-"+day;
+			setCookie("start4", formatDate, 10);
+			/*document.getElementById("weekday").innerHTML = "ala ma kota";
+			var txt = document.createTextNode("your cool text");
+			dateTag.appendChild(txt);*/
+			
+			
+			if (cald == null){
+				cald = CALENDAR();				
+				cald.init();
+			}
+			//cald.init();
+			
+			cald.createCal.cache = {}; 
+			cald.createCal(year, month);
+			//cald.switchMonth(null, month, year);
+			cald.switchMonth(null, new Date().getMonth(), new Date().getFullYear());
+		}
+		
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			var expires = "expires="+ d.toUTCString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+		
+		function getCookie(cname) {
+			var name = cname + "=";
+			var decodedCookie = decodeURIComponent(document.cookie);
+			var ca = decodedCookie.split(';');
+			for(var i = 0; i <ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+		
+		function getDate(){
+			var date = getCookie("start4");
+			var days = 7;
+			/*
+			if (date==""){ 
+				date = new Date();//.toDateString();
+				date.setTime(date.getTime() - (days*24*60*60*1000));
+				//date.toDateString()
+				var month = date.getMonth()+1;
+				//date = date.getDate()+"-"+month+"-"+date.getFullYear();			
+				var day = date.getDate();				
+				var year = date.getFullYear();
+				if (day<10) { day = "0"+day;}
+				if (month<10) { month = "0"+month;}
+				date = year+"-"+month+"-"+day;				
+			}			*/
+			return date;
+		}
+		
+		function checkDate(date){
+			if (date=='' || date=='dd.mm.rrrr' || date=='dd/mm/rrrr'){
+				date = getDate();
+			}
+			var datetag = document.getElementById("last_cycle");											
+			datetag.value = date;
+			updateCalendar();
+			return date;
+		}
+		//not my stuff
+
+$(document).ready(function(){
+
+//var cal = CALENDAR();
+
+//cal.init();
+
+cald = CALENDAR();
+cald.init();
+
+});
+
+</script>
+<script>
+/*
+<function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}*/
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- WebCalendar baner 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4402674240600002"
+     data-ad-slot="3175552821"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45019697-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-45019697-13');
+</script>
+
+</html>
