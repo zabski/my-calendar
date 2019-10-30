@@ -10,6 +10,7 @@
 	
 
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-4402674240600002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
 	  (adsbygoogle = window.adsbygoogle || []).push({
 		google_ad_client: "ca-pub-4402674240600002",
@@ -149,9 +150,9 @@
 <form role="form" id="input_data">
 	<p>
 		<label for="cycle">Cycle days</label><br>
-		<input type="button" id="cycle_prev" value="&lang;" onclick="buttonPress('cycle', -1);"/>
+		<input type="button" id="cycle_prev" value="<" onclick="buttonPress('cycle', -1);"/>
 		<input type="number" id="cycle" min="20" max="40" step="1" value="28" default="28" onchange="updateCalendar();" readonly/>
-		<input type="button" id="cycle_next" value="&rang;" onclick="buttonPress('cycle', 1);"/> 
+		<input type="button" id="cycle_next" value=">" onclick="buttonPress('cycle', 1);"/> 
 	<p>
 		
 		<label for="period">Period days</label><br>
