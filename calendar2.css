@@ -45,10 +45,13 @@ body {
 
 #cal .header { 
     cursor:default; 
-    background: #cd310d; 
-	/*background: #0d31cd;*/
+    /*background: #cd310d; 
+	/*background: #0d31cd;
     background: -moz-linear-gradient(top, #b32b0c, #cd310d); 
-    background: -webkit-gradient(linear, left top, left bottom, from(#b32b0c), to(#cd310d)); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#b32b0c), to(#cd310d)); */
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);    
+    background: -moz-linear-gradient(top, #79bbff, #378de5); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#79bbff), to(#378de5)); 
     height: 68px; 
     position: relative; 
     color:#fff; 
@@ -59,7 +62,8 @@ body {
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px; 
     font-weight:bold; 
-    text-shadow:0px -2px 0 #87260C; 
+    /*text-shadow:0px -2px 0 #87260C; */
+    text-shadow:0px -2px 0 rgba(0, 0, 0, 0.25); 
     text-transform: uppercase; 
 } 
 #cal .header span { 
@@ -75,9 +79,12 @@ body {
     border-radius:20px; 
     -moz-border-radius:20px; 
     -webkit-border-radius:20px; 
-    background:#ececec; 
+    /*background:#ececec;
     background: -moz-linear-gradient(right top, #fff, #827e7d); 
-    background: -webkit-gradient(linear, right top, right bottom, from(#fff), to(#827e7d)); 
+    background: -webkit-gradient(linear, right top, right bottom, from(#fff), to(#827e7d)); */
+    background:linear-gradient(to bottom, #79bbff 50%, #378de5 100%);
+    background: -moz-linear-gradient(right top, #79bbff, #378de5); 
+    background: -webkit-gradient(linear, right top, right bottom, from(#79bbff), to(#378de5)); 
     box-shadow:0px -2px 4px rgba(0, 0, 0, 0.65 ); 
     -moz-box-shadow:0px -2px 4px rgba(0, 0, 0, 0.65 ); 
     -webkit-box-shadow:0px -2px 4px rgba(0, 0, 0, 0.65 ); 
@@ -110,8 +117,13 @@ body {
     border-top-right-radius: 10px; 
 } 
 #cal .header .button:hover { 
+    /*
     background: -moz-linear-gradient(top, #d94215, #bb330f); 
     background: -webkit-gradient(linear, left top, left bottom, from(#d94215), to(#bb330f)); 
+    */
+    background:linear-gradient(to bottom, #79bbff 100%, #378de5 100%);
+    background: -moz-linear-gradient(right top, #79bbff, #378de5); 
+    background: -webkit-gradient(linear, right top, right bottom, from(#79bbff), to(#378de5)); 
 }
 
 #cal .header .month-year { 
@@ -158,7 +170,9 @@ body {
 }
 
 #cal #cal-frame td.picked { 
-    background:#CD31CD; /*#CD310D; /*#ffeded; */
+    /*background:#CD31CD; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
     color:#fff; 
 	text-shadow: #00000033 0px -2px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -168,7 +182,9 @@ body {
 } 
 
 #cal #cal-frame td.period { 
-    background:#CD3131; /*#CD310D; /*#ffeded; */
+    /*background:#CD3131; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
     color:#fff; 
 	text-shadow: #00000033 0px -2px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -178,7 +194,9 @@ body {
 } 
 
 #cal #cal-frame td.fertile { 
-    background:#31CD31; /*#CD310D; /*#ffeded; */
+    /*background:#31CD31; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
     color:#fff; 
 	text-shadow: #00000033 0px -2px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -188,7 +206,9 @@ body {
 
 }
 #cal #cal-frame td.ovulation { 
-    background:#31CDCD; /*#CD310D; /*#ffeded; */
+    /*background:#31CDCD; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #77b55a 5%, #3e7327 100%);
+	background-color:#77b55a;
     color:#fff; 
 	text-shadow: #00000033 0px -2px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -335,7 +355,9 @@ p.luteal {
 }
 
 #legend td.picked { 
-    background:#CD31CD; /*#CD310D; /*#ffeded; */
+    /* background:#CD31CD; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
     color:#fff; 
 	text-shadow: #00000033 0px -1px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -345,7 +367,9 @@ p.luteal {
 } 
 
 #legend td.period { 
-    background:#CD3131; /*#CD310D; /*#ffeded; */
+    /* background:#CD3131; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
     color:#fff; 
 	text-shadow: #00000033 0px -1px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -355,7 +379,9 @@ p.luteal {
 } 
 
 #legend td.fertile { 
-    background:#31CD31; /*#CD310D; /*#ffeded; */
+    /* background:#31CD31; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
     color:#fff; 
 	text-shadow: #00000033 0px -1px;
 	/*text-shadow: #6C1A07 0px -4px;*/
@@ -365,7 +391,9 @@ p.luteal {
 
 }
 #legend td.ovulation { 
-    background:#31CDCD; /*#CD310D; /*#ffeded; */
+    /* background:#31CDCD; /*#CD310D; /*#ffeded; */
+    background:linear-gradient(to bottom, #77b55a 5%, #3e7327 100%);
+	background-color:#77b55a;
     color:#fff; 
 	text-shadow: #00000033 0px -1px;
 	/*text-shadow: #6C1A07 0px -4px;*/
