@@ -126,7 +126,9 @@ body {
 } 
 #cal td { 
     color:#2b2b2b; 
-    width:60px; 
+    width:14vw;
+    max-width:14vw;
+    min-width:14vw;
     height:40px; 
     line-height:40px; 
     text-align:center; 
@@ -134,12 +136,16 @@ body {
     cursor:default; 
 } 
 #cal #days td { 
+    /*
     height:42px; 
-    line-height: 42px; 
-    max-width: 60px;
+    line-height: 42px;*/
+    width:2ch;   
     overflow:hidden;
-    /*text-transform:uppercase; */
-    font-size:70%; 
+    white-space: nowrap;
+    text-overflow:clip;    
+    padding-left:5px;
+    padding-right:5px;
+    font-size:80%; 
     color:#3e3e3e; 
 } 
 #cal #days td:not(:last-child) { 
@@ -259,6 +265,15 @@ body {
 
 #input_data input[type="date"] {
 	font-size:120%; 
+}
+
+#input_data input[type="button"] {
+    color:#fff; 
+    border:0px;
+    border-radius: 25px;    
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    background: -moz-linear-gradient(right top, #79bbff, #378de5); 
+    background: -webkit-gradient(linear, right top, right bottom, from(#79bbff), to(#378de5)); 
 }
 
 p.luteal {
