@@ -3,20 +3,20 @@
 <!--meta name="propeller" content="d254abea09f12908d3c188120f49153f"-->
 <head> 
     <meta charset="utf-8" /> 
-    <title>My Calendar</title> 
+    <title>Calendar of Menstruation and Fertility</title> 
     <link rel="stylesheet" href="calendar2.css" />
 	<META NAME="DESCRIPTION" CONTENT="Check your menstrual cycle, find your fertile and infertile days, calculate your ovulation day">
 	<META NAME="KEYWORDS" CONTENT="Menstrual cycle, Fertility, Fertile days, Infertile days, Ovulation, Menstrual cycle calendar, Period calculator, Safe sexual intercourse, Natural contraception">
 	
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!--script data-ad-client="ca-pub-4402674240600002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script-->
-	<script>
+	<!--script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script-->
+    <script data-ad-client="ca-pub-4402674240600002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>    
+	<!--script>
 	  (adsbygoogle = window.adsbygoogle || []).push({
 		google_ad_client: "ca-pub-4402674240600002",
 		enable_page_level_ads: true
 	  });
-	</script>	
+	</script-->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script src="calendar.js"></script>
 	
@@ -43,7 +43,7 @@
         <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
         <div class="w3-blue">
           <button class="w3-button w3-blue w3-xlarge" onclick="w3_open()">☰</button>  
-          My Calendar
+          Calendar of Menstruation and Fertility
         </div>
         </div>        
 	</div>
@@ -100,11 +100,13 @@
 <!--calendar-->
 	<div id="cal"> 
     <div class="header"> 
-		<span class="left button" id="prev"> &lang; </span> 
+		<span class="left button" id="prev" translate="no">
+            &larr;
+        </span> 
 		<!--span class="left hook"></span--> 
 		<span class="month-year" id="label"> November 2019 </span> 
 		<!--span class="right hook"></span--> 
-		<span class="right button" id="next"> &rang; </span>
+		<span class="right button" id="next" translate="no"> &rsaquo; </span>
     </div> 
     <table id="days"> 
 		<td>Sunday</td> 
@@ -116,7 +118,7 @@
 		<td>Saturday</td>		
  
     </table> 
-    <div id="cal-frame"> 
+    <div id="cal-frame" translate="no"> 
 		<table class="curr"> 
 			<tbody> 
 				<tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr> 
@@ -134,13 +136,13 @@
 		
 		<table class="legend"> 
 			<tbody> 				 
-				<tr><td class="title">&plus;</td><td class="title">Explanation</td><td class="title">Chance / Risk of conceiving</td></tr>
-				<tr><td class="picked">1</td><td class="desc">First day of period</td><td class="desc">no / none</td></tr> 
-				<tr><td class="period">2</td><td class="desc">Period days</td><td class="desc">no / none</td></tr> 
-				<tr><td class="fertile">3</td><td class="desc">Fertile days</td><td class="desc">high</td></tr> 
-				<tr><td class="ovulation">4</td><td class="desc">Ovulation</td><td class="desc">very high</td></tr> 
-				<tr><td >5</td><td class="desc">Infertile days </td><td class="desc">low</td></tr> 
-				<tr><td class="today">6</td><td class="desc">Today</td><td class="desc">see calendar</td></tr> 
+				<tr><td class="title">&plus;</td><td class="title">Explanation</td><td class="title"> Chance / Risk</td></tr>
+				<tr><td class="picked" translate="no">1</td><td class="desc">First day of period</td><td class="desc">no, none</td></tr> 
+				<tr><td class="period" translate="no">2</td><td class="desc">Period days</td><td class="desc">no / none</td></tr> 
+				<tr><td class="fertile" translate="no">3</td><td class="desc">Fertile days</td><td class="desc">high</td></tr> 
+				<tr><td class="ovulation" translate="no">4</td><td class="desc">Ovulation</td><td class="desc">very high</td></tr> 
+				<tr><td translate="no">5</td><td class="desc">Infertile days </td><td class="desc">low, little</td></tr> 
+				<tr><td class="today" translate="no">6</td><td class="desc">Today</td><td class="desc">see calendar</td></tr> 
 			</tbody> 
 		</table>
 		
@@ -175,7 +177,7 @@
 <div id="instruction">
 <h1>Instruction</h1>
 <p>
-In order to check the phase of your menstrual cycle, please enter the length of your menstrual cycle, and the start date of your last menstruation period. Then look at the calendar. It will indicate your current phase of the cycle, along with the likelyhood of conception for each day of the month.
+    In order to check the phase of your menstrual cycle, please enter the length of your menstrual cycle, and the start date of your last menstruation period. Then look at the calendar. It will indicate your current phase of the cycle, along with the <b>chance</b> of conceiving (or <b>risk</b> of pregnancy) for each day of the month.
 </div>
 <!-- end lz my stuff -->
 <!--div id="p_1774275"></div><script src="//native.propellerads.com/1?z=1774275&eid=p_1774275"></script-->
@@ -343,8 +345,9 @@ function myFunction() {
 }
 </script>
 
+<!-- Previous version of google ads
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- WebCalendar baner 1 -->
+<!-- WebCalendar baner 1 --
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4402674240600002"
@@ -352,7 +355,7 @@ function myFunction() {
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script-->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45019697-13"></script>
