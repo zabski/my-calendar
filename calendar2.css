@@ -446,6 +446,10 @@ p.luteal {
     -webkit-box-shadow:4px 4px 0px #00000033 inset; */
 } 
 
+h2 {
+    text-align: center;
+}
+
 #instruction { 
 /*	width: auto;*/
     background:#fff;
