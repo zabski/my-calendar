@@ -18,7 +18,7 @@
 	  });
 	</script-->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script src="calendar.js"></script>
+	<script src="calendar2.js"></script>
 	
 	<!--meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
@@ -104,10 +104,10 @@
             &larr;
         </span> 
 		<!--span class="left hook"></span--> 
-        <span class="month-nr" id="month-nr" translate="no" style="display: none;">10</span> 
+        <!--span class="month-nr" id="month-nr" translate="no" style="display: none;">10</span--> 
 		<span class="month-year" id="label" translate="no"> November 2019 </span> 
 		<!--span class="right hook"></span--> 
-		<span class="right button" id="next" translate="no"> &rarr; </span>
+		<span class="right button" id="next_month_btn" translate="no"> &rarr; </span>
     </div> 
     <table id="days"> 
 		<td>Sunday</td> 
@@ -139,7 +139,7 @@
 			<tbody> 				 
 				<tr><td class="title">&plus;</td><td class="title">Explanation</td><td class="title"> Chance / Risk</td></tr>
 				<tr><td class="picked" translate="no" class="notranslate">&#x0031;`</td><td class="desc">1-st day of period</td><td class="desc">There is no</td></tr> 
-				<tr><td class="period" translate="no" class="notranslate">&#x0032;`</td><td class="desc">Period days</td><td class="desc">There is no</td></tr> 
+				<tr><td class="period" translate="no" class="notranslate">&#x0032;`</td><td class="desc">Days of period</td><td class="desc">There is no</td></tr> 
 				<tr><td class="fertile" translate="no" class="notranslate">&#x0033;`</td><td class="desc">Fertile days</td><td class="desc">high</td></tr> 
 				<tr><td class="ovulation" translate="no" class="notranslate">&#x0034;`</td><td class="desc">Ovulation</td><td class="desc">very high</td></tr> 
 				<tr><td translate="no" class="notranslate">&#x0035;`</td><td class="desc">Infertile days </td><td class="desc">low, little</td></tr> 
@@ -179,6 +179,20 @@
 <h2>Instruction</h2>
 <p>
     In order to check the phase of your menstrual cycle, please enter the length of your menstrual cycle, and the start date of your last menstruation period. Then look at the calendar. It will indicate your current phase of the cycle, along with the <b>chance</b> of conceiving (or <b>risk</b> of pregnancy) for each day of the month.
+</div>
+<div>
+<div id="month0">January</div>
+<div id="month1">February</div>
+<div id="month2">March</div>
+<div id="month3">April</div>
+<div id="month4">May</div>
+<div id="month5">June</div>
+<div id="month6">July</div>
+<div id="month7">August</div>
+<div id="month8">September</div>
+<div id="month9">October</div>
+<div id="month10">November</div>
+<div id="month11">December</div>
 </div>
 <!--p translate="no">Don't translate this!</p>
 <p>This can be translated to any language.</p>
