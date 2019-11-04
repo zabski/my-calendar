@@ -11,7 +11,7 @@ html {
 
 body { 
     
-    background: #e0e0e0; 
+    background: #fff;    
 	/*
 	width: 500px;
 	-webkit-align-content: center;
@@ -465,12 +465,12 @@ h2 {
 }
 
 .add-button {
-  position: absolute;
-  margin-left: 25%;
-  margin-right: 25%;
-  bottom: 10px;
-  min-height: 60px;
-  min-width: 120px;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 50px;
+    min-height: 60px;
+    min-width: 120px;
     
 	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
