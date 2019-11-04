@@ -28,6 +28,7 @@
 	</script-->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script src="calendar2.js"></script>
+    <script src="index.js" defer></script>        
 	
 	<!--meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
@@ -189,7 +190,8 @@
 <p>
     In order to check the phase of your menstrual cycle, please enter the length of your menstrual cycle, and the start date of your last menstruation period. Then look at the calendar. It will indicate your current phase of the cycle, along with the <b>chance</b> of conceiving (or <b>risk</b> of pregnancy) for each day of the month.
 </div>
-<div>
+<button class="add-button">Add to home screen</button>
+<div style="display: none">
 <div id="month0">January</div>
 <div id="month1">February</div>
 <div id="month2">March</div>
@@ -392,6 +394,20 @@ function myFunction() {
   gtag('js', new Date());
 
   gtag('config', 'UA-45019697-13');
+</script>
+        
+<!-- registr service worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    //navigator.serviceWorker.register('service-worker.js')
+      navigator.serviceWorker.register('sw.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
 </script>
 
 </html>
