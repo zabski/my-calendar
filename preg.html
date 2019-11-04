@@ -1,0 +1,561 @@
+<!DOCTYPE html> 
+<html> 
+<!--meta name="propeller" content="d254abea09f12908d3c188120f49153f"-->
+<head> 
+    <meta charset="utf-8" /> 
+    <title>My Calendar</title> 
+    <link rel="stylesheet" href="calendar2.css" /> 
+	
+	<!--meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+	
+	<!-- WebCalendar baner 1 -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-4402674240600002"
+		 data-ad-slot="3175552821"
+		 data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	<!--sidebar html -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="calendar2.css" />
+
+<div id="myHeader" class="header">
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Calendar</a>
+  <a href="mens.html" class="w3-bar-item w3-button">Menstrual cycle</a>
+  <!--a href="ovul.php" class="w3-bar-item w3-button">Ovulation</a-->
+  <a href="fert.html" class="w3-bar-item w3-button">Fertility</a>   
+   <a href="preg.html" class="w3-bar-item w3-button">How to get pregnant</a>   
+  <!--a href="https://play.google.com/store/apps/details?id=com.zmobile.calendarfree" class="w3-bar-item w3-button">Get mobile app</a-->  
+</div>
+
+<!-- Page Content -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-blue">
+  <button class="w3-button w3-blue w3-xlarge" onclick="w3_open()">☰</button>  
+  My Calendar
+</div>
+</div>
+<!--div>
+  <div class="w3-container">
+    <h3>Site header</h3>
+    <p>The w3-overlay class can be used to create an overlay effect, when opening the sidebar. The w3-overlay class adds a black background with a 50% opacity to the "page content" - this effect will "highlight" the side navigation</p>
+    <p>Click on the "hamburger menu" to see the effect.</p>
+  </div>
+</div-->
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+// sticky header
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<!-- sidebar html end -->
+</head> 
+<body> 
+<!-- body content Pregnant.html -->
+<DIV ID="headline" DIR="LTR">
+	<H1><FONT FACE="Arial, sans-serif">Pregnancy: Tips for Trying to
+	Conceive</FONT></H1>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#tips_for_trying_to_conceive">Trying
+		to Conceive Facts*</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#when_can_a_woman_get_pregnant_during_her_menstrual_cycle">Fertility
+		Awareness</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#taking_your_temperature_to_conceive">Basal
+		body temperature method</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#using_the_calendar_method_to_conceive">Calendar
+		method</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#using_the_ovulation_method_to_conceive">Cervical
+		mucus method</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#when_to_see_your_doctor_if_you_are_having_problems_getting_pregnant">When
+		to see your doctor if you are having problems conceiving</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_is_infertility">Infertility</A>
+		</FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_causes_of_infertility_in_women">Age</A>
+		</FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_causes_infertility_in_men">Health
+		Problems</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_is_the_treatment_for_infertility">Options
+		for infertile couples</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_other_options_are_available_if_a_couple_cant_conceive">Adoption</A>
+		</FONT>
+		</P>
+		<LI><P><FONT FACE="Arial, sans-serif"><A HREF="#counseling_and_support_groups_for_help">Counseling
+		and support groups</A> </FONT>
+		</P>
+	</UL>
+</DIV>
+<DIV ID="pageContainer" DIR="LTR">
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><A NAME="tabIdx"></A><!-- End 160x600/120x600 Ad Unit --><!--START TOC--><FONT FACE="Arial, sans-serif"><A HREF="/trying_to_conceive/index.htm" ONCLICK="wmdTrack('arttab-index');">Pregnancy:
+		Tips for Trying to Conceive Center</A><!-- Start TOC Chunk--> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/ovulation_and_fertility_pictures_slideshow/article.htm" TARGET="_blank" ONCLICK="wmdTrack('ssprmo-arttoc_1');">Ovulation
+		&amp; Fertility Slideshow Pictures</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/early_pregnancy_symptoms_quiz/quiz.htm" TARGET="_blank" ONCLICK="wmdTrack('qzprmo-arttoc_2');">Early
+		Pregnancy Symptoms Quiz</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/stages_of_pregnancy_pictures_slideshow/article.htm" TARGET="_blank" ONCLICK="wmdTrack('ssprmo-arttoc_3');">Stages
+		of Pregnancy Slideshow Pictures</A><!-- End TOC Chunk--><!--HASTOCPROMO-->
+		</FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/trying_to_conceive/patient-comments-1102.htm" ONCLICK="wmdTrack('art-nav1-pd_1');">Patient
+		Comments: Trying to Conceive - Methods</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/trying_to_conceive/patient-comments-2962.htm" ONCLICK="wmdTrack('art-nav1-pd_2');">Patient
+		Comments: Trying to Conceive - Experience</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/trying_to_conceive/patient-comments-3126.htm" ONCLICK="wmdTrack('art-nav1-pd_3');">Patient
+		Comments: Trying to Conceive - Causes in Men</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/trying_to_conceive/patient-comments-3127.htm" ONCLICK="wmdTrack('art-nav1-pd_4');">Patient
+		Comments: Trying to Conceive - Infertility Causes in Women</A> </FONT>
+		</P>
+		<LI><P><FONT FACE="Arial, sans-serif"><A HREF="https://www.medicinenet.com/trying_to_conceive/city.htm" TARGET="_blank" ONCLICK="wmdTrack('art-nav1-city');">Find
+		a local Obstetrician-Gynecologist in your town</A> </FONT>
+		</P>
+	</UL>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#tips_for_trying_to_conceive">Trying
+		to Conceive Facts*</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#when_can_a_woman_get_pregnant_during_her_menstrual_cycle">Fertility
+		Awareness</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#taking_your_temperature_to_conceive">Basal
+		body temperature method</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#using_the_calendar_method_to_conceive">Calendar
+		method</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#using_the_ovulation_method_to_conceive">Cervical
+		mucus method</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#when_to_see_your_doctor_if_you_are_having_problems_getting_pregnant">When
+		to see your doctor if you are having problems conceiving</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_is_infertility">Infertility</A>
+		</FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_causes_of_infertility_in_women">Age</A>
+		</FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_causes_infertility_in_men">Health
+		Problems</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_is_the_treatment_for_infertility">Options
+		for infertile couples</A> </FONT>
+		</P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><A HREF="#what_other_options_are_available_if_a_couple_cant_conceive">Adoption</A>
+		</FONT>
+		</P>
+		<LI><P><FONT FACE="Arial, sans-serif"><A HREF="#counseling_and_support_groups_for_help">Counseling
+		and support groups</A> </FONT>
+		</P>
+	</UL>
+	<H3 CLASS="western"><A NAME="tips_for_trying_to_conceive"></A><!--END TOC--><FONT FACE="Arial, sans-serif">Tips
+	for trying to conceive*</FONT></H3>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">If
+		you are trying to get pregnant (conceive), you have the best chance
+		of success if you are aware of your <A HREF="https://www.medicinenet.com/menstruation/article.htm" ONCLICK="wmdTrack('embd-lnk');">menstrual
+		cycle</A> and changes that happen to your body during that time.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">It
+		helps to know when you are fertile and able to get pregnant. A
+		woman&rsquo;s fertile time is usually a few days per month in the
+		middle of her menstrual cycle and represents the time when a woman
+		ovulates.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">There
+		are three ways to track your fertile times: 1) basal body
+		temperature method, 2) calendar method, and 3) cervical mucus
+		method (ovulation method).</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Many
+		women experience miscarriages or pregnancy losses, or cannot
+		conceive at all (infertility).</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Infertility
+		in women can be caused by age, health problems (like PCOS), uterine
+		fibroids, endometriosis, and pelvic inflammatory disease, and
+		negative lifestyle factors.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Infertility
+		in men may be caused infertility in men are sperm gene defects,
+		negative lifestyle choices (alcohol and drugs), toxins (lead,
+		pesticides), STDs, diabetes, and prostate or testicle problems.</FONT></P>
+		<LI><P><FONT FACE="Arial, sans-serif">There are several treatment
+		options for infertile couples including drugs, surgery,
+		intrauterine insemination (artificial insemination), assisted
+		reproductive technology, third party assistance, adoption, and
+		foster care.</FONT></P>
+	</UL>
+	<P><FONT FACE="Arial, sans-serif">This article offers tips for those
+	desiring to have a baby, offers advice on what to do when trying to
+	conceive to determine your fertile period, and discusses options for
+	those who are having trouble conceiving.</FONT></P>
+	<H3 CLASS="western"><A NAME="when_can_a_woman_get_pregnant_during_her_menstrual_cycle"></A>
+	<FONT FACE="Arial, sans-serif">When can a woman get pregnant during
+	her menstrual cycle?</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">Being aware of your menstrual
+	cycle and the changes in your body that happen during this time can
+	help you know when you are most likely to get pregnant. See how the
+	menstrual cycle works.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">The average menstrual cycle lasts
+	28 days. But normal cycles can vary from 21 to 35 days. The amount
+	of time before ovulation occurs is different in every woman and even
+	can be different from month to month in the same woman, varying from
+	13 to 20 days long. Learning about this part of the cycle is
+	important because it is when ovulation and pregnancy can occur.
+	After ovulation, every woman (unless she has a health problem that
+	affects her periods or becomes pregnant) will have a period within
+	14 to 16 days.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Knowing when you're most fertile
+	will help you plan or prevent pregnancy. There are three ways you
+	can keep track of your fertile times. They are the: 1) basal body
+	temperature method; 2) calendar method; and 3) ovulation method
+	(cervical mucus method).</FONT></P>
+	<H3 CLASS="western"><A NAME="taking_your_temperature_to_conceive"></A>
+	<FONT FACE="Arial, sans-serif">Taking your temperature to conceive</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">Basal body temperature is your
+	temperature at rest as soon as you awake in the morning. A woman's
+	basal body temperature rises slightly with ovulation. So by
+	recording this temperature daily for several months, you'll be able
+	to predict your most fertile days.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Basal body temperature differs
+	slightly from woman to woman. Anywhere from 96 to 98 degrees
+	Fahrenheit orally is average before ovulation. After ovulation most
+	women have an oral temperature between 97 and 99 degrees Fahrenheit.
+	The rise in temperature can be a sudden jump or a gradual climb over
+	a few days.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Usually a woman's basal body
+	temperature rises by only 0.4 to 0.8 degrees Fahrenheit. To detect
+	this tiny change, women must use a basal body thermometer. These
+	thermometers are very sensitive. Most pharmacies sell them for about
+	$10. You can then record your temperature on our special Basal Body
+	Temperature Chart (PDF, 555 KB).</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">The rise in temperature doesn't
+	show exactly when the egg is released. But almost all women have
+	ovulated within three days after their temperatures spike. Body
+	temperature stays at the higher level until your period starts.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">You are most fertile and most
+	likely to get pregnant:</FONT></P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Two
+		to three days before your temperature hits the highest point
+		(ovulation)</FONT></P>
+		<LI><P><FONT FACE="Arial, sans-serif">12 to 24 hours after
+		ovulation</FONT></P>
+	</UL>
+	<P><FONT FACE="Arial, sans-serif">A man's sperm can live for up to
+	three days in a woman's body. The sperm can fertilize an egg at any
+	point during that time. So if you have unprotected sex a few days
+	before ovulation, you could get pregnant.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Many things can affect basal body
+	temperature. For your chart to be useful, make sure to take your
+	temperature every morning at about the same time. Things that can
+	alter your temperature include:</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Drinking alcohol the night before</FONT></P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Smoking
+		cigarettes the night before</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Getting
+		a poor night's sleep</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Having
+		a fever</FONT></P>
+		<LI><P><A NAME="cntid"></A><FONT FACE="Arial, sans-serif">Doing
+		anything in the morning before you take your temperature -
+		including going to the bathroom and talking on the phone</FONT></P>
+	</UL>
+	<H1><A NAME="slideModal"></A><FONT FACE="Arial, sans-serif">Quick
+	GuideBoost Your Fertility: Ovulation Calculator, Pregnancy Planning
+	and More </FONT>
+	</H1>
+	<P STYLE="margin-bottom: 0cm"> 
+	</P>
+	<DIV ID="articleInArticle" DIR="LTR">
+		<H3 CLASS="western"><!-- Start Article in Article --><!--START TITLE--><FONT FACE="Arial, sans-serif">Early
+		Pregnancy Symptoms and Signs</FONT></H3>
+		<P><!--END TITLE--><FONT FACE="Arial, sans-serif">Not all women
+		have the same signs and symptoms during pregnancy, and the symptoms
+		vary from mild to severe. Early symptoms that you might be pregnant
+		include:</FONT></P>
+		<UL>
+			<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Low
+			back pain </FONT>
+			</P>
+			<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Implantation
+			bleeding </FONT>
+			</P>
+			<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">Mood
+			changes </FONT>
+			</P>
+			<LI><P><FONT FACE="Arial, sans-serif">Fatigue </FONT>
+			</P>
+		</UL>
+		<P STYLE="margin-bottom: 0cm"><!--END AIALINK--></P>
+	</DIV>
+	<H3 CLASS="western"><A NAME="using_the_calendar_method_to_conceive"></A>
+	<!-- End Article in Article --><FONT FACE="Arial, sans-serif">Using
+	the calendar method to conceive</FONT></H3>
+	<H3 CLASS="western" STYLE="font-weight: normal"><FONT FACE="Arial, sans-serif">This
+	involves recording your menstrual cycle on a calendar for eight to
+	12 months. The first day of your period is Day 1. Circle Day 1 on
+	the calendar. The length of your cycle may vary from month to month.
+	So write down the total number of days it lasts each time. Using
+	this record, you can find the days you are most fertile in the
+	months ahead:</FONT></H3>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">To
+		find out the first day when you are most fertile, subtract 18 from
+		the total number of days in your shortest cycle. Take this new
+		number and count ahead that many days from the first day of your
+		next period. Draw an X through this date on your calendar. The X
+		marks the first day you're likely to be fertile.</FONT></P>
+		<LI><P><FONT FACE="Arial, sans-serif">To find out the last day when
+		you are most fertile, subtract 11 from the total number of days in
+		your longest cycle. Take this new number and count ahead that many
+		days from the first day of your next period. Draw an X through this
+		date on your calendar. The time between the two Xs is your most
+		fertile window.</FONT></P>
+	</UL>
+	<P><FONT FACE="Arial, sans-serif">This method always should be used
+	along with other fertility awareness methods, especially if your
+	cycles are not always the same length.</FONT></P>
+	<H3 CLASS="western"><A NAME="using_the_ovulation_method_to_conceive"></A>
+	<FONT FACE="Arial, sans-serif">Using the ovulation method to
+	conceive</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">The cervical mucus method (also
+	known as the ovulation method) involves being aware of the changes
+	in your cervical mucus throughout the month. The hormones that
+	control the menstrual cycle also change the kind and amount of mucus
+	you have before and during ovulation. Right after your period, there
+	are usually a few days when there is no mucus present or &quot;dry
+	days.&quot; As the egg starts to mature, mucus increases in the
+	vagina, appears at the vaginal opening, and is white or yellow and
+	cloudy and sticky. The greatest amount of mucus appears just before
+	ovulation. During these &quot;wet days&quot; it becomes clear and
+	slippery, like raw egg whites. Sometimes it can be stretched apart.
+	This is when you are most fertile. About four days after the wet
+	days begin the mucus changes again. There will be much less and it
+	becomes sticky and cloudy. You might have a few more dry days before
+	your period returns. Describe changes in your mucus on a calendar.
+	Label the days, &quot;Sticky,&quot; &quot;Dry,&quot; or &quot;Wet.&quot;
+	You are most fertile at the first sign of wetness after your period
+	or a day or two before wetness begins.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">The cervical mucus method is less
+	reliable for some women. Women who are breastfeeding, taking
+	hormonal birth control (like the pill), using feminine hygiene
+	products, have vaginitis or sexually transmitted infections (STIs or
+	STDs), or have had surgery on the cervix should not rely on this
+	method.</FONT></P>
+	<H3 CLASS="western"><A NAME="when_to_see_your_doctor_if_you_are_having_problems_getting_pregnant"></A>
+	<FONT FACE="Arial, sans-serif">When to see your doctor if you are
+	having problems getting pregnant</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">You should talk to your doctor
+	about your fertility if:</FONT></P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">You
+		are younger than 35 and have not been able to conceive after one
+		year of frequent sex without birth control.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">You
+		are age 35 or older and have not been able to conceive after six
+		months of frequent sex without birth control.</FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif">You
+		believe you or your partner might have fertility problems in the
+		future (even before you begin trying to get pregnant).</FONT></P>
+		<LI><P><FONT FACE="Arial, sans-serif">You or your partner has a
+		problem with sexual function or libido.</FONT></P>
+	</UL>
+	<P><FONT FACE="Arial, sans-serif">Happily, doctors are able to help
+	many infertile couples go on to have babies.</FONT></P>
+	<H3 CLASS="western"><A NAME="what_is_infertility"></A><FONT FACE="Arial, sans-serif">What
+	is infertility?</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">Some women want children but
+	either cannot conceive or keep miscarrying. This is called
+	infertility. Lots of couples have infertility problems. About
+	one-third of the time, it is a female problem. In another one-third
+	of cases, it is the man with the fertility problem. For the
+	remaining one-third, both partners have fertility challenges or no
+	cause is found.</FONT></P>
+	<H3 CLASS="western"><A NAME="what_causes_of_infertility_in_women"></A>
+	<FONT FACE="Arial, sans-serif">What causes of infertility in women?</FONT></H3>
+	
+	<P><FONT FACE="Arial, sans-serif">Some common reasons for
+	infertility in women include:</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Age:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Women generally have some decrease in fertility starting in their
+	early 30s. And while many women in their 30s and 40s have no
+	problems getting pregnant, fertility especially declines after age
+	35. As a woman ages, normal changes that occur in her ovaries and
+	eggs make it harder to become pregnant. Even though menstrual cycles
+	continue to be regular in a woman's 30s and 40s, the eggs that
+	ovulate each month are of poorer quality than those from her 20s. It
+	is harder to get pregnant when the eggs are poorer in quality. As a
+	woman nears menopause, the ovaries may not release an egg each
+	month, which also can make it harder to get pregnant. Also, as a
+	woman and her eggs age, she is more likely to miscarry, as well as
+	have a baby with genetic problems, such as Down syndrome.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Health problems:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Some women have diseases or conditions that affect their hormone
+	levels, which can cause infertility.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Polycystic ovay syndrome
+	(PCOS)</FONT></STRONG><FONT FACE="Arial, sans-serif">: Women with
+	PCOS rarely or never ovulate. Failure to ovulate is the most common
+	cause of infertility in women.<BR>With primary ovarian insufficiency
+	(POI), a woman's ovaries stop working normally before she is 40. It
+	is not the same as early menopause. Some women with POI get a period
+	now and then. But getting pregnant is hard for women with POI.<BR>A
+	condition called luteal phase defect (LPD) is a failure of the
+	uterine lining to be fully prepared for pregnancy. This can keep a
+	fertilized egg from implanting or result in miscarriage.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Reproductive problems:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Common problems with a woman's reproductive organs, like uterine
+	fibroids, endometriosis, and pelvic inflammatory disease (PID) can
+	worsen with age and also affect fertility. These conditions might
+	cause the fallopian tubes to be blocked, so the egg can't travel
+	through the tubes into the uterus.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Lifestyle factors:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Certain lifestyle factors also can have a negative effect on a
+	woman's fertility. Examples include smoking, alcohol use, weighing
+	much more or much less than an ideal body weight, a lot of strenuous
+	exercise, and having an eating disorder. Stress also can affect
+	fertility.</FONT></P>
+	<H3 CLASS="western"><A NAME="what_causes_infertility_in_men"></A><FONT FACE="Arial, sans-serif">What
+	causes infertility in men?</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">Unlike women, some men remain
+	fertile into their 60s and 70s. But as men age, they might begin to
+	have problems with the shape and movement of their sperm. They also
+	have a slightly higher risk of sperm gene defects. Or they might
+	produce no sperm, or too few sperm. Lifestyle choices also can
+	affect the number and quality of a man's sperm. Alcohol and drugs
+	can temporarily reduce sperm quality. And researchers are looking at
+	whether environmental toxins, such as pesticides and lead, also may
+	be to blame for some cases of infertility. Men also can have health
+	problems that affect their sexual and reproductive function. These
+	can include sexually transmitted infections (STIs), diabetes,
+	surgery on the prostate gland, or a severe testicle injury or
+	problem.</FONT></P>
+	<DIV ID="crsprm-2081-assmnt" DIR="LTR">
+
+	</DIV>
+	<H3 CLASS="western"><A NAME="what_is_the_treatment_for_infertility"></A>
+	<FONT FACE="Arial, sans-serif">What is the treatment for
+	infertility?</FONT></H3>
+	<P><FONT FACE="Arial, sans-serif">If you are having fertility
+	issues, your doctor can refer you to a fertility specialist, a
+	doctor who treats infertility. The doctor will need to test both you
+	and your partner to find out what the problem is. Depending on the
+	problem, your doctor might recommend treatment. About 9 in 10 cases
+	of infertility are treated with drugs or surgery. <I>Don't delay
+	seeing your doctor as age also affects the success rates of these
+	treatments. </I>For some couples, adoption or foster care offers a
+	way to share their love with a child and to build a family.</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Some treatments include:</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Drugs:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Various fertility drugs may be used for women with ovulation
+	problems. It is important to talk with your doctor about the drug to
+	be used. You should understand the drug's benefits and side effects.
+	Depending on the type of fertility drug and the dosage of the drug
+	used, multiple births (such as twins) can occur.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Surgery:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Surgery is done to repair damage to a woman's ovaries, fallopian
+	tubes, or uterus. Sometimes a man has an infertility problem that
+	can be corrected by surgery.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Intrauterine insemination
+	(IUI, artificial insemination):</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Male sperm is injected into part of the woman's reproductive tract,
+	such as into the uterus or fallopian tube. IUI often is used along
+	with drugs that cause a woman to ovulate.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Assisted reproductive
+	technology (ART):</FONT></STRONG><FONT FACE="Arial, sans-serif"> ART
+	involves stimulating a woman's ovaries; removing eggs from her body;
+	mixing them with sperm in the laboratory; and putting the embryos
+	back into a woman's body. Success rates of ART vary and depend on
+	many factors.</FONT></P>
+	<P><STRONG><FONT FACE="Arial, sans-serif">Third party assistance:</FONT></STRONG><FONT FACE="Arial, sans-serif">
+	Options include donor eggs (eggs from another woman are used), donor
+	sperm (sperm from another man are used), or surrogacy (when another
+	woman carries a baby for you).</FONT></P>
+	<P><FONT FACE="Arial, sans-serif">Finding the cause of infertility
+	is often a long, complex, and emotional process. And treatment can
+	be expensive. Many health insurance companies do not provide
+	coverage for infertility or provide only limited coverage. Check
+	your health insurance contract carefully to learn about what is
+	covered. Some states have laws that mandate health insurance
+	policies to provide infertility coverage.</FONT></P>
+	<P><BR><BR>
+	</P>
+</DIV>
+<BR><BR><BR><BR>
+<!-- end body content Pregnant.html -->
+
+<!-- Sidebar --
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Calendar</a>
+  <a href="fert.html" class="w3-bar-item w3-button">Fertility</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content --
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Sidebar Overlay</h1>
+    <p>The w3-overlay class can be used to create an overlay effect, when opening the sidebar. The w3-overlay class adds a black background with a 50% opacity to the "page content" - this effect will "highlight" the side navigation</p>
+    <p>Click on the "hamburger menu" to see the effect.</p>
+  </div>
+</div-->
+
+</body>
+<!--script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script-->
+
+</html>
