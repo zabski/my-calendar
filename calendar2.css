@@ -465,6 +465,7 @@ h2 {
 }
 
 .add-button {
+    display: block;
     position: static;    
     margin-left: auto;
     margin-right: auto;
@@ -493,6 +494,7 @@ h2 {
 }
 
 .fb-share-button {
+    display: block;
     position: static;    
     margin-left: auto;
     margin-right: auto;
