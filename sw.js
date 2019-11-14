@@ -1,13 +1,27 @@
 //var cacheName = 'hello-pwa';
 var cacheName = 'my-calendar';
 var filesToCache = [
-  '/my-calendar/',
+  /*'/my-calendar/',
   '/my-calendar/index.html',
   '/my-calendar/mens.html',
   '/my-calendar/preg.html',
   '/my-calendar/fert.html',
   '/my-calendar/calendar2.css',
-  '/my-calendar/calendar2.js'
+  '/my-calendar/calendar2.js',
+  '/my-calendar.eu/',
+  '/my-calendar.eu/index.html',
+  '/my-calendar.eu/mens.html',
+  '/my-calendar.eu/preg.html',
+  '/my-calendar.eu/fert.html',
+  '/my-calendar.eu/calendar2.css',
+  '/my-calendar.eu/calendar2.js'  */
+  '/',
+  '/index.html',
+  '/mens.html',
+  '/preg.html',
+  '/fert.html',
+  '/calendar2.css',
+  '/calendar2.js'
 ];
 
 /* Start the service worker and cache all of the app's content */

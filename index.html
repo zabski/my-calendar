@@ -88,6 +88,7 @@
           }
         }
     </script>
+    <!--script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5dcad444ccf294001963771a&product=inline-share-buttons&cms=website' async='async'></script-->
 </head> 
 
 <body onload="checkDate('')"> 
@@ -170,7 +171,7 @@
 	<p>
 		<label for="cycle">Days of your cycle</label><br>
 		<input type="button" id="cycle_prev" value="<" onclick="buttonPress('cycle', -1);"/>
-		<input type="number" id="cycle" min="20" max="40" step="1" value="28" default="28" onchange="updateCalendar();" readonly/>
+		<input type="number" id="cycle" min="20" max="40" step="1" value="28" default="28" onchange="updateCalendar();" readonly placeholder="Days of cycle"/>
 		<input type="button" id="cycle_next" value=">" onclick="buttonPress('cycle', 1);"/> 
 	<p>
 		
@@ -186,10 +187,10 @@
 		<input type="button" id="luteal_next" value="&plus;" onclick="buttonPress('luteal', 1);"/> 
 	<p>
 		<label for="last">Last period start date</label><br>
-		<input type="date" id="last_cycle" name="last" onchange="updateCalendar();" /> 
-		<!--onload="this.value=checkDate(this.value)" onFocus="this.value=checkDate(this.value)" /> <!--onFocus="if (this.value=='' || this.value=='dd.mm.rrrr') {this.value=getDate()}" -->
-		<br>
-		<text id="weekday">Weekday</text>
+		<input type="date" id="last_cycle" name="last" onchange="updateCalendar();" placeholder="Pick date here!" /> 		
+		<!--onload="this.value=checkDate(this.value)" onFocus="this.value=checkDate(this.value)" /> <!--onFocus="if (this.value=='' || this.value=='dd.mm.rrrr') {this.value=getDate()}" -->				
+		<text id="weekday" class="" onchange="">Weekday</text>
+		<span class="date-hint" >&larr; Pick date here!</span>
 </form>
 <div id="instruction">
 <h2>Instruction</h2>
@@ -221,6 +222,11 @@
 <!-- facebook share button-->
 <p>
 <div class="fb-share-button" data-href="https://my-calendar.eu/?utm_source=share_btm&amp;utm_medium=facebook" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmy-calendar.eu%2F%3Futm_source%3Dshare_btm%26utm_medium%3Dfacebook&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+<a href="https://twitter.com/intent/tweet?button_hashtag=PeriodCalendar&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">
+Greate online app #PeriodCalendar https://my-calendar.eu/</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!--div class="sharethis-inline-share-buttons"></div-->
 
 </body>
 <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
