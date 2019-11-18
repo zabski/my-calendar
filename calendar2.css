@@ -540,6 +540,7 @@ h2 {
 
 .text-page {
     padding: 10px;
+    background-color:#fff;
 }
 
 .date-hint {    
@@ -562,6 +563,7 @@ ul.share-buttons{
   display: block;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 100px;
 }
 
 ul.share-buttons li{
@@ -571,10 +573,14 @@ ul.share-buttons li{
 ul.share-buttons .sr-only{
   position: absolute;
   clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px, 1px, 1px, 1px);  
   padding: 0;
   border: 0;
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+ul.links{
+    font-size:20px;
 }
