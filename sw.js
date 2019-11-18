@@ -21,7 +21,22 @@ var filesToCache = [
   '/preg.html',
   '/fert.html',
   '/calendar2.css',
-  '/calendar2.js'
+  '/calendar2.js',
+  'images/flat_web_icon_set/color/Email.png',
+  'images/flat_web_icon_set/color/Facebook.png',
+  'images/flat_web_icon_set/color/Pinboard.png',
+  'images/flat_web_icon_set/color/Pinterest.png',
+  'images/flat_web_icon_set/color/Pocket.png',
+  'images/flat_web_icon_set/color/Reddit.png',
+  'images/flat_web_icon_set/color/Tumblr.png',
+  'images/flat_web_icon_set/color/Twitter.png',
+  'images/flat_web_icon_set/color/Wordpress.png',
+  'images/hello-icon-512.png',
+  'images/hello-icon-256.png',
+  'images/hello-icon-192.png',
+  'images/hello-icon-152.png',
+  'images/hello-icon-144.png',
+  'images/hello-icon-128.png'
 ];
 
 /* Start the service worker and cache all of the app's content */
