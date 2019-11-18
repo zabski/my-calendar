@@ -462,8 +462,17 @@ p.luteal {
     -webkit-box-shadow:4px 4px 0px #00000033 inset; */
 } 
 
+h1 {
+    text-align: center;
+    font-size:24px;
+    font-weight:bold;    
+}
+
 h2 {
     text-align: center;
+    font-size:20px;
+    font-weight:bold;
+    margin-top: 20px;
 }
 
 #instruction { 
