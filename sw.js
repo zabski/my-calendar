@@ -21,7 +21,7 @@ var filesToCache = [
   '/preg.html',
   '/fert.html',
   '/calendar2.css',
-  '/calendar2.js',
+  '/calendar2.js'/*,
   'images/flat_web_icon_set/color/Email.png',
   'images/flat_web_icon_set/color/Facebook.png',
   'images/flat_web_icon_set/color/Pinboard.png',
@@ -36,7 +36,7 @@ var filesToCache = [
   'images/hello-icon-192.png',
   'images/hello-icon-152.png',
   'images/hello-icon-144.png',
-  'images/hello-icon-128.png'
+  'images/hello-icon-128.png'*/
 ];
 
 /* Start the service worker and cache all of the app's content */
